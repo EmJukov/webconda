@@ -43,7 +43,7 @@ class LoginForm(FlaskForm, SerializerMixin):
 class RegisterForm(FlaskForm, SerializerMixin):
     surname = StringField('Фамилия')
     name = StringField('Имя')
-    age = IntegerField("Возвраст")
+    age = IntegerField("Возраст")
     address = StringField("Место доставки")
     email = EmailField('Почта', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
